@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <link rel="icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icon cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .dropdown-item:hover {
+            background-color: black;
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar blurry navbar-expand-lg navbar-dark sticky-top fixed">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html"><img src="logo.png" width="100px" class="img1"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active m-2" aria-current="page" href="Home.html"
+                            style=" font-size: large;">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  m-2" style=" font-size: large;" href="#"
+                            id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Observations
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="sun.html">Sun</a></li>
+                            <li><a class="dropdown-item" href="Moon.html">Moon</a></li>
+                            <li><a class="dropdown-item" href="earth.html">Earth</a></li>
+                            <li><a class="dropdown-item" href="Stars.html">Stars</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  m-2" href="planets.html" style=" font-size: large;">Planets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  m-2" href="gallery.html" style=" font-size: large;">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  m-2" href="aboutus.html" style=" font-size: large;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  m-2" href="contact.html" style=" font-size: large;">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Banner -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/carousel.jpg" class="d-block w-100 img1" alt="..." data-aos="fade-up"
+                    data-aos-duration="3000">
+            </div>
+            <div class="carousel-caption">
+                <h1 data-aos="fade-up" data-aos-duration="3000"><span class="first">EXPLORE ASTRONOMY</span></h1>
+            </div>
+        </div>
+    </div>
+    <section data-aos="fade-up" data-aos-duration="3000" class="mt-5" style="margin-top: 150px;">
+        <h2 class="text-center"><span class="second">Grow With Us</span></h2>
+    </section>
+
+    <section class="mt-4" data-aos="fade-up" data-aos-duration="3000" style="margin-top: 100px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <img src="images/Earth Icon.png" alt="">
+                    <h4 class="text-warning" style="padding-left:30px;">Earth</h4>
+                    <p class="text-white">Earth is the third planet from the Sun and known
+                        to harbor life.
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <img src="images/Moon Icon.png" alt="">
+                    <h4 class=" text-warning" style="padding-left:30px ;">Moon</h4>
+                    <p class="text-white">The Moon is Earth's only natural satellite.</p>
+                </div>
+                <div class="col-lg-3">
+                    <img src="images/Star Icon.png" alt="">
+                    <h4 class="text-warning" style="padding-left:35px">Star</h4>
+                    <p class="text-white">A star is an astronomical object comprising a luminous spheroid </p>
+                </div>
+                <div class="col-lg-3 "><img src="images/Sun Icon.png" alt="">
+                    <h4 class="text-warning" style="padding-left:40px;">Sun</h4>
+                    <p class="text-white">The Sun is the star at the center of the Solar System.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider  -->
+    <div class="slider mt-5">
+        <!-- list Items -->
+        <div class="list">
+            <div class="item active">
+                <img src="images/Universe.jpg">
+                <div class="content">
+                    <p></p>
+                    <h2 class="text-warning">Universe</h2>
+                    <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+                        The universe is everything. It includes all of space, and all the matter and energy that space
+                        contains. It even includes time itself and, of course, it includes you. Earth and the Moon are
+                        part of the universe, as are the other planets and their many dozens of moons.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Galaxy.jpeg">
+                <div class="content">
+                    <p></p>
+                    <h2 class="text-warning">Galaxy</h2>
+                    <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+                        A galaxy is a system of stars, stellar remnants, interstellar gas, dust, and dark matter bound
+                        together by gravity. The word is derived from the Greek galaxias, literally 'milky', a reference
+                        to the Milky Way galaxy that contains the Solar System.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Black Holes.jpg">
+                <div class="content">
+                    <p></p>
+                    <h2 class="text-warning">Black Holes</h2>
+                    <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+                        A black hole is a region of spacetime where gravity is so strong that nothing, including light
+                        and other electromagnetic waves, has enough energy to escape it. The theory of general
+                        relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Satellite.jpg">
+                <div class="content">
+                    <p></p>
+                    <h2 class="text-warning">Satellite</h2>
+                    <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+                        A satellite or artificial satellite is an object, typically a spacecraft, placed into orbit
+                        around a celestial body. Satellites have a variety of uses, including communication relay,
+                        weather forecasting, navigation, broadcasting, scientific research, and Earth observation.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Solar Eclipse.jpg">
+                <div class="content">
+                    <p></p>
+                    <h2 class="text-warning">Solar eclipse</h2>
+                    <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+                        A solar eclipse occurs when the Moon passes between Earth and the Sun, thereby obscuring the
+                        view of the Sun from a small part of the Earth, totally or partially.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Lunar Eclipse.jpg">
+                <div class="content">
+                    <p></p>
+                    <h2 class="text-warning">Lunar Eclipse</h2>
+                    <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;">
+                        A lunar eclipse is an astronomical event that occurs when the Moon moves into the Earth's
+                        shadow, causing the Moon to be darkened. Such an alignment occurs during an eclipse season,
+                        approximately every six months, during the full moon phase, when the Moon's orbital plane is
+                        closest to the plane of the Earth's orbit.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- button arrows -->
+        <div class="arrows">
+            <button id="prev">
+                < </button>
+                    <button id="next">></button>
+        </div>
+        <!-- thumbnail -->
+        <div class="thumbnail">
+            <div class="item active">
+                <img src="images/Universe.jpg">
+                <div class="content text-warning">
+                    Universe
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Galaxy.jpeg">
+                <div class="content text-warning">
+                    Galaxy
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Black Holes.jpg">
+                <div class="content text-warning">
+                    Black Holes
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Satellite 2.jpg">
+                <div class="content text-warning">
+                    Satellite
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Solar Eclipse.jpg">
+                <div class="content text-warning">
+                    Solar Eclipse
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/Lunar Eclipse.jpg">
+                <div class="content text-warning">
+                    Lunar Eclipse
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog  -->
+    <section>
+        <div class="container mt-4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="row">
+                <div class="col" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                    <h5 class="text-warning text-center">Our Blog</h5>
+                    <h1 class="text-warning text-center">News & Blog</h1>
+                    <p class="text-white text-center"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div style="width:23rem;">
+                        <img src="images/card 1.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <h5 class="text-white mt-4" style="font-family: Verdana, Geneva, Tahoma, sans-serif ;">Space Is Full
+                        Of Surprise</h5>
+                    <p class="text-white">Beyond the confines of our terrestrial abode, the great unknown unfolds in a
+                        spectacle of cosmic wonders, each twinkling star and distant galaxy telling a story of cosmic
+                        evolution.</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <div style="width:23rem;">
+                        <img src="images/card 2.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <h5 class="text-white mt-4" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Space Is What
+                        Matters The Most</h5>
+                    <p class="text-white"> Moons with subsurface oceans, exoplanets with atmospheres, and the habitable
+                        zones remind us that the universe is not only vast but also brimming with possibilities.</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <div style="width:23rem;">
+                        <img src="images/card 3.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <h5 class="text-white mt-4" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Let's Measure
+                        The Space</h5>
+                    <p class="text-white">The cosmic ballet of celestial bodies, the eons-long dance of galaxies, and
+                        the birth and death of stars are just a few chapters in the grand narrative of the cosmos.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4" id="footer">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom ">
+            <!-- Left -->
+
+            <!-- Left -->
+
+            <!-- Right -->
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section>
+                <div class=" text-center text-md-start">
+                    <!-- Grid row -->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4" id="text">
+                                <i><img src="logo.png" width="160px" class="img1"></i>
+                            </h6>
+                            <p id="text-para">
+                                The astronomy is the scientific study of celestial objects such as stars, planets,
+                                comets, and galaxies,
+                                as well as the phenomena that occur outside Earth's atmosphere.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-5">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4" id="text">
+                                Our Store
+                            </h6>
+                            <p>
+                                <a href="Home.html" class="text-white" style="text-decoration:none";>Home</a>
+                            </p>
+                            <p>
+                                <a href="gallery.html" class="text-white" style="text-decoration:none";>Gallery</a>
+                            </p>
+                            <p>
+                                <a href="aboutus.html" class="text-white" style="text-decoration:none";>About</a>
+                            </p>
+                            <p>
+                                <a href="contact.html" class="text-white" style="text-decoration:none";>Contact</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-5">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold m.contentb-4" id="text">Get in Touch</h6>
+                            <p class="text-white"><i class="bi bi-house me-3 text-warning"></i>Aptech North
+                                Nazimabad,Karachi.</p>
+                            <p class="text-white">
+                                <i class="bi bi-envelope me-3 text-warning"></i>
+                                skygazing1234@gmail.com
+                            </p>
+                            <p class="text-white"><i class="bi bi-phone me-3 text-warning"></i>03162002596</p>
+                            <p class="text-white"><i class="bi bi-phone me-3 text-warning"></i>03162789600</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+                <div class="me-5 mt-4 d-none d-lg-block">
+                    <h5 id="text" class="text-center">Get connected with us on social networks..</h5>
+                </div>
+                <div class="justify-content-center">
+                    <div class="p-4 pb-0">
+                        <!-- Section: Social media -->
+                        <section class="text-center">
+                            <!-- Facebook -->
+                            <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                                href="https://www.Facebook.com" role="button"><i class="bi bi-facebook fs-3"></i></a>
+
+                            <!-- Twitter -->
+                            <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                                href="https://www.twitter.com" role="button"><i class="bi bi-twitter fs-3"></i></a>
+
+                            <!-- Google -->
+                            <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                                href="https://www.Google.com" role="button"><i class="bi bi-google fs-3"></i></a>
+
+                            <!-- Instagram -->
+                            <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                                href="https://www.Instagram.com" role="button"><i class="bi bi-instagram fs-3"></i></a>
+
+                            <!-- Linkedin -->
+                            <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                                href="https://www.Linkedin.com" role="button"><i class="bi bi-linkedin fs-3"></i></a>
+                            <!-- Github -->
+                            <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                                href="https://www.github.com" role="button"><i class="bi bi-github fs-3"></i></a>
+                        </section>
+                        <!-- Section: Social media -->
+                    </div>
+                </div>
+                <!-- Right -->
+            </section>
+
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4 fw-bold" style="background-color: rgba(0, 0, 0, 0.05);" id="text">
+            © 2024 copyright: skygazing.com
+
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="js/slider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

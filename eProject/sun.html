@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sun</title>
+    <link rel="icon" type="image" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Icon cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <!-- animation  -->
+    <!-- Aos Animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Lexend+Deca:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,900;1,600;1,700;1,800&family=Varela+Round&display=swap');
+
+        body {
+            font-family: 'Anton', sans-serif;
+            font-family: 'Playfair Display', serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Varela Round', sans-serif;
+            font-family: 'Lexend Deca', sans-serif;
+            background-color: black;
+        }
+
+        .nav-item::after {
+            content: '';
+            display: block;
+            width: 0px;
+            height: 2px;
+            background: #fec400;
+            transition: 0.4s
+        }
+
+        .nav-item:hover::after {
+            width: 100%
+        }
+
+        .navbar-dark .navbar-nav .active>.nav-link,
+        .navbar-dark .navbar-nav .nav-link.active,
+        .navbar-dark .navbar-nav .nav-link.show,
+        .navbar-dark .navbar-nav .show>.nav-link,
+        .navbar-dark .navbar-nav .nav-link:focus,
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #fec400
+        }
+
+        .nav-link {
+            transition: 0.2s
+        }
+
+
+        .blurry {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.4);
+            justify-content: space-between;
+        }
+
+        .carousel-caption {
+            position: relative;
+            top: 110px;
+            left: 30px;
+        }
+
+        .first {
+            font-size: 80px;
+        }
+
+        .second {
+            font-size: 50px;
+            color: #fec400;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        #footer {
+            background-color: black;
+        }
+
+        #text {
+            color: #fec400;
+        }
+
+        #text-para {
+            color: aliceblue;
+        }
+
+        #section-padding {
+            margin-top: 70px;
+        }
+
+        #sun {
+            position: relative;
+            top: 60px;
+        }
+
+        .dropdown-item:hover {
+            background-color: black;
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- NAVIGATION -->
+    <nav class="navbar blurry navbar-expand-lg navbar-dark sticky-top fixed">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html"><img src="logo.png" width="100px" class="img1"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active m-2" aria-current="page" href="Home.html"
+                            style=" font-size: large;">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle  m-2" style=" font-size: large;" href="#"
+                            id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Observations
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="sun.html">Sun</a></li>
+                            <li><a class="dropdown-item" href="Moon.html">Moon</a></li>
+                            <li><a class="dropdown-item" href="earth.html">Earth</a></li>
+                            <li><a class="dropdown-item" href="Stars.html">Stars</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  m-2" href="planets.html" style=" font-size: large;">Planets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  m-2" href="gallery.html" style=" font-size: large;">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  m-2" href="aboutus.html" style=" font-size: large;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  m-2" href="contact.html" style=" font-size: large;">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- /.....  -->
+
+    <section id="section-padding">
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-lg-4  col-md-4 mt-4" id="sun">
+                    <img src="images/Sun Gif.gif" class="img-fluid" data-aos="fade-up" data-aos-duration="3000">
+                </div>
+                <div class="col-lg-8 col-md-4  mt-4" data-aos="fade-up" data-aos-duration="3000">
+                    <u class="text-warning">
+                        <h1 class="fw-bold"> The Sun</h1>
+                    </u>
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">The sun, a luminous ball of hot,
+                        ionized gas at the heart of our solar system, is the primary source of light and energy for
+                        Earth. A massive, nearly perfect sphere composed mainly of hydrogen and helium, it generates
+                        energy through nuclear fusion in its core. This continuous process releases an immense amount of
+                        heat and light, creating the conditions necessary for life on our planet. The sun's
+                        gravitational pull keeps planets and other celestial bodies in orbit, orchestrating the
+                        intricate dance of our solar system. Its radiance not only sustains life but also captivates our
+                        imagination, inspiring cultures, myths, and scientific exploration throughout human history.</p>
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">The Sun, at the heart of our solar
+                        system, is a luminous sphere primarily composed of hydrogen and helium. Sustaining life on
+                        Earth, it undergoes nuclear fusion in its core, where hydrogen atoms fuse to form helium,
+                        releasing vast amounts of energy. This energy, radiated as light and heat, supports life and
+                        influences the behavior of celestial bodies. The Sun exhibits periodic solar cycles, marked by
+                        phenomena such as sunspots and solar flares. Emitting a constant solar wind, it plays a crucial
+                        role in shaping the dynamics of our solar system. About 4.6 billion years old, the Sun is
+                        currently a stable, middle-aged star with a life expectancy of several billion more years before
+                        undergoing transformations into a red giant and eventually a white dwarf.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-lg-10 col-md-4">
+                    <h3 class=" text-warning">What is the Sun made Of?</h3>
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">The Sun is primarily composed of two
+                        elements: hydrogen and helium. Hydrogen makes up about 74 percent <br> of its mass, while helium
+                        accounts for some 24 percent. The remaining few percent includes heavier <br>elements like
+                        oxygen, carbon, neon, and iron. These latter elements were formed in the cores of older,
+                        long-<br>dead stars that exploded and spewed their innards outward, providing enriched material
+                        that was eventually <br>recycled into the it when it was born.</p>
+                </div>
+                <div class="col-lg-5 col-md-4">
+                    <h3 class="mt-4 mb-5  text-warning" width="100px">How hot is the Sun?</h3>
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" class="mt-5">The temperature varies
+                        depending on which part you're talking about. The core, where nuclear fusion occurs,<br> is
+                        scorching hot, with a temperature of about 27 million degrees Fahrenheit (15 million degrees
+                        Celsius). The <br> Sun's surface, or photosphere, is cooler, at around 10,000 F (5,500 C).
+                        Meanwhile, the outer atmosphere, the<br> corona, is curiously hotter than the surface, with
+                        temperatures soaring up to a few million degrees.</p>
+                </div>
+                <div class="col-lg-7 col-md-4">
+                    <img src="images/Sun3.jpg" alt="" data-aos="fade-down" data-aos-easing="linear"
+                        data-aos-duration="1200">
+                </div>
+                <div class="col-lg-12 col-md-4">
+                    <h3 class="mt-4 mb-5 text-warning">How old is the Sun?</h3>
+
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" class="mt-5">Our Sun is a middle-aged
+                        star, approximately 4.6 billion years old. It formed from the gravitational collapse of a region
+                        within a large molecular cloud primarily composed of hydrogen and helium. As the cloud
+                        contracted under its own gravity, the pressure and temperature at the core increased, eventually
+                        triggering nuclear fusion.</p>
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">It has been burning ever since, and
+                        it’s expected to continue shining about the same way for another 5 billion years or so, at which
+                        point it will balloon up into a red giant star.</p>
+                </div>
+                <div class="col-lg-12 col-md-4">
+                    <h3 class="mt-4 mb-5 text-warning">How big is the Sun? </h3>
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" class="mt-5">With a diameter of some
+                        864,000 miles (1.39 million km), the Sun dwarfs any other object in our solar system. In fact,
+                        you could fit about 1.3 million Earths inside it.</p>
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">However, despite its dominance over our
+                        solar system, the Sun is still a relatively diminutive star when compared to others in the known
+                        universe. For instance, the red hypergiant star UY Scuti has a radius some 1,700 times that of
+                        the Sun, meaning some 5 billion Suns could fit inside UY Scuti.</p>
+                </div>
+
+
+                <div class="col-lg-6 col-md-4">
+                    <h3 class="mt-4 mb-5 text-warning">What would happen if it suddenly disappeared ?</h3>
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;" class="mt-5">Without the Sun, Earth
+                        would be a vastly different place. We wouldn’t know the Sun had vanished for about eight minutes
+                        (the Earth is, on average, about 93 million miles away) due to the time it takes for light (and
+                        gravitational waves) to travel from it to Earth. After that, the world would plunge into
+                        darkness.</p>
+                    <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Without the Sun's heat, Earth would
+                        become a frozen, lifeless rock within a week. The average global surface temperature would
+                        plummet, the atmosphere would freeze and fall to the ground as snow, and the oceans would freeze
+                        over. And without the Sun acting as the gravitational anchor point of the solar system, Earth
+                        would cease to orbit anything, instead moving along a straight line (depending on interactions
+                        with other planets) right out of our solar system.</p>
+                </div>
+                <div class="col-lg-6 col-md-4">
+                    <img src="images/Sun2.jpg" alt="" data-aos="fade-down" data-aos-easing="linear"
+                        data-aos-duration="1500">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- .... -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4" id="footer">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom ">
+            <!-- Left -->
+
+            <!-- Left -->
+
+            <!-- Right -->
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section>
+                <div class=" text-center text-md-start">
+                    <!-- Grid row -->
+                    <div class="row">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 mt-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4" id="text">
+                                <i><img src="logo.png" width="160px" class="img1"></i>
+                            </h6>
+                            <p id="text-para">
+                                The astronomy is the scientific study of celestial objects such as stars, planets,
+                                comets, and galaxies,
+                                as well as the phenomena that occur outside Earth's atmosphere.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 mt-5">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4" id="text">
+                                Our Store
+                            </h6>
+                            <p>
+                                <a href="Home.html" class="text-white" style="text-decoration:none";>Home</a>
+                            </p>
+                            <p>
+                                <a href="gallery.html" class="text-white" style="text-decoration:none";>Gallery</a>
+                            </p>
+                            <p>
+                                <a href="aboutus.html" class="text-white" style="text-decoration:none";>About</a>
+                            </p>
+                            <p>
+                                <a href="contact.html" class="text-white" style="text-decoration:none";>Contact</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 mt-5">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold m.contentb-4" id="text">Get in Touch</h6>
+                            <p class="text-white"><i class="bi bi-house me-3 text-warning"></i>Aptech North
+                                Nazimabad,Karachi.</p>
+                            <p class="text-white">
+                                <i class="bi bi-envelope me-3 text-warning"></i>
+                                skygazing1234@gmail.com
+                            </p>
+                            <p class="text-white"><i class="bi bi-phone me-3 text-warning"></i>03162002596</p>
+                            <p class="text-white"><i class="bi bi-phone me-3 text-warning"></i>03162789600</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+                <div class="me-5 mt-4 d-none d-lg-block">
+                    <h5 id="text" class="text-center">Get connected with us on social networks..</h5>
+                </div>
+                <div class="justify-content-center">
+                    <div class="p-4 pb-0">
+                        <!-- Section: Social media -->
+                        <section class="text-center">
+                            <!-- Facebook -->
+                            <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                                href="https://www.Facebook.com" role="button"><i class="bi bi-facebook fs-3"></i></a>
+
+                            <!-- Twitter -->
+                            <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                                href="https://www.twitter.com" role="button"><i class="bi bi-twitter fs-3"></i></a>
+
+                            <!-- Google -->
+                            <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                                href="https://www.Google.com" role="button"><i class="bi bi-google fs-3"></i></a>
+
+                            <!-- Instagram -->
+                            <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                                href="https://www.Instagram.com" role="button"><i class="bi bi-instagram fs-3"></i></a>
+
+                            <!-- Linkedin -->
+                            <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                                href="https://www.Linkedin.com" role="button"><i class="bi bi-linkedin fs-3"></i></a>
+                            <!-- Github -->
+                            <a data-mdb-ripple-init class="btn text-white btn-floating m-1"
+                                href="https://www.github.com" role="button"><i class="bi bi-github fs-3"></i></a>
+                        </section>
+                        <!-- Section: Social media -->
+                    </div>
+                </div>
+                <!-- Right -->
+            </section>
+
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4 fw-bold" style="background-color: rgba(0, 0, 0, 0.05);" id="text">
+            © 2024 copyright: skygazing.com
+
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
